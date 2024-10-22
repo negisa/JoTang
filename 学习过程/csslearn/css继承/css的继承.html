@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<!-- id选择器优先于类选择器，类选择器优先于样式选择器 -->
+<!-- 对于继承来说，继承的优先度为0，属于最低 -->
+<!-- 权重有叠加性,复合选择器ul li将权重进行了叠加，因此优先于li选择器-->
+<style>
+  li {
+    color: red;
+  }
+
+  ul li {
+    color: blue;
+  }
+</style>
+
+<body>
+  <ul>
+    <li>man</li>
+    <li>what</li>
+    <li>can</li>
+  </ul>
+</body>
+
+</html>

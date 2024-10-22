@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .bar {
+      width: 100px;
+      height: 20px;
+
+      border-radius: 10px;
+      border: 1px solid red;
+      padding: 1px;
+    }
+
+    .bar_1 {
+      width: 50%;
+      height: 100%;
+      background-color: #f00;
+      border-radius: 10px;
+      top: 50px;
+      left: 50px;
+      transition: all .3s;
+    }
+
+    /* 谁变给谁加属性 */
+    .bar:hover .bar_1 {
+      width: 100%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bar">
+    <div class="bar_1"></div>
+  </div>
+
+</body>
+
+</html>

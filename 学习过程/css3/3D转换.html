@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 3D移动采用translate进行移动。单位使用px，正值向外 -->
+  <!-- 3D旋转：rotateX(45deg) rotateY(45deg) rotateZ(45deg) rotate(45deg) -->
+  <!-- 透视：perspective(100px)也称为视距，类似于眼睛离屏幕的距离，产生近大远小效果，透视写在被观察元素的父元素上 -->
+  <!-- transform-style控制子元素是否开启3D空间，默认是flat不开启，开启是preserve-3D开启，也写给父元素 -->
+  <style>
+    body {
+      perspective: 500px;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border-radius: 100px;
+      margin: 100px auto;
+    }
+
+    div:hover {
+      transition: all 2s;
+      /* 拇指指向正方向，手指弯曲的方向为正方向 */
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>

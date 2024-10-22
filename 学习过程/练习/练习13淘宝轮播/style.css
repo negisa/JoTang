@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.tobo-prom {
+  width: 520px;
+  height: 280px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.prev,
+.next {
+  width: 20px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  /* 让它垂直居中 */
+
+  background-color: 0 0 0 0.7;
+  position: absolute;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+
+}
+
+.prev {
+  left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.next {
+  /* 当有左右时先进行左边的，上下移动先进行上定位 */
+  right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.pro-nav {
+  position: absolute;
+  bottom: 15px;
+  background: rgba(255, 255, 255, .3);
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 13px;
+  border-radius: 7px;
+}
+
+.pro-nav li {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  float: left;
+  margin: 3px;
+}
+
+.pro-nav .selceted {
+  background-color: red;
+}

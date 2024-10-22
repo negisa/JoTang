@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 伪类选择器用来添加特殊效果，使用冒号 -->
+<!-- 常见链接伪类选择器，link,visited hover  -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* 按照lvha顺序 */
+  /* a:link{用于未访问的链接} */
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* 点击过的链接用visited */
+  a:visited {
+    color: green;
+  }
+
+  /* 鼠标经过用hover */
+  a:hover {
+    color: blue;
+  }
+
+  /* 鼠标正在按下用active */
+  a:active {
+    color: aquamarine;
+  }
+</style>
+
+<body>
+  <a href="#">伪类选择器</a>
+</body>
+
+</html>

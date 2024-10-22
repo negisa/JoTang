@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 使用prompt()函数，可以获取用户输入，但需注意，返回的是字符串，单选框和多选框也是
+    // 加号会把变量转换为字符类型
+    console.log(1 + '2')
+    // 剩余的符号会转换为数字类型
+    console.log(3 - '2')
+    // 加号作为正号符，会转换为数字类型
+    console.log(+'123')
+    // 显式转换
+    let age = Number(prompt('age'))
+    let num = +prompt('num')//也能转换数字
+    // 保留整数用：parseInt()，保留小数用：parseFloat()，不管后面有没有单位
+
+    alert(age)
+
+  </script>
+</body>
+
+</html>

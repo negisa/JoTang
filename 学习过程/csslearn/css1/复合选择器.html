@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* 父子选择器，例如我要修改ol中的li */
+  ol li {
+    color: pink;
+  }
+
+  ol li a {
+    color: red;
+  }
+
+  /* 子选择器只能选择亲儿子，和后代选择器不一样,用大于号 */
+  .nav>a {
+    color: red;
+  }
+</style>
+
+<body>
+  <ol>
+    <li>hoa</li>
+    <li>haisda</li>
+    <li><a href="#">ndsajkl</a>ndjksa</li>
+  </ol>
+  <ul>
+    <li>asiodnj</li>
+    <li>hdujasi</li>
+    <li>hndjak</li>
+  </ul>
+
+  <div class="nav">
+    <a href="#">我是儿子</a>
+    <p><a href="#">我是孙子</a></p>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> /* 类选择器和属性选择器 伪类选择器 权重都是 10 */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 属性选择器使用中括号进行选择 */
+    /* input[value] {
+      color: red;
+    } */
+
+    /* 只选择 type =text 文本框的input 选取出来 */
+    input[type=text] {
+      color: pink;
+    }
+
+    div[class^=icon] {
+      color: red;
+      /* 注意div和中括号中间没有空格 */
+    }
+
+    section[class$=data] {
+      color: blue;
+    }
+  </style>
+</head>
+<!-- css3新增了三中选择器 -->
+
+<body>
+  <!-- <input type="text" value="nsad">
+  <input type="text"> -->
+  <input type="text" name="" id="">
+  <input type="password">
+  <!-- 3. 属性选择器可以选择属性值开头的某些元素,开始可以用逗号连接，但是也可以用属性选择器 -->
+  <div class="icon1">小图标1</div>
+  <div class="icon2">小图标2</div>
+  <div class="icon3">小图标3</div>
+  <div class="icon4">小图标4</div>
+  <div>我是打酱油的</div>
+  <!-- 4. 属性选择器可以选择属性值结尾的某些元素 -->
+  <section class="icon1-data">我是安其拉</section>
+  <section class="icon2-data">我是哥斯拉</section>
+  <section class="icon3-ico">哪我是谁</section>
+</body>
+
+</html>

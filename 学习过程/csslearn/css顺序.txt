@@ -1,0 +1,5 @@
+1.跟定位相关的样式，例如 position: absolute;display: inline-block;
+2.盒模型相关的样式width: 100%;height: 100%;
+3.文本属性相关的样式
+4.其他
+实际开发中导航栏我们一般会用li加上a来写

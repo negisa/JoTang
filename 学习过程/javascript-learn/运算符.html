@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // ==存在隐式转换，会把字符串转换成数字，只判断值相等
+    alert(1 == '1')
+    // === 不存在隐式转换，判断值和类型都相等，NaN不等于NaN
+    alert(1 === '1')
+    // 大于小于可以比较字符串
+    // 三元运算符
+    alert(true ? '是' : '否')
+    let time = +prompt('time')
+    time < 10 ? alert('0' + time) : alert(time)
+  </script>
+</body>
+
+</html>

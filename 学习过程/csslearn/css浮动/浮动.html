@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 多个块元素横向排列找浮动，纵向标准流 -->
+<!-- float属性用于改变元素在正常流中的位置，让元素浮动到左边或者右边。直到遇到浮动元素或者块元素的边界才停止。 -->
+<!-- 浮动元素有三个特性1.脱离标准流的位置，不再保留原来的位置  -->
+<!-- 浮动元素一行显示，相互贴在一起，超过会另起一行 -->
+<!-- 浮动元素有行内块元素的特性，可以设置行高，但是不能设置宽度，默认和父元素相同，高度可以设置。宽度由内容决定 -->
+<!-- 约束浮动元素的父元素，父元素一般为标准流-->
+<!-- 浮动的盒子只会影响后面的标准流，不会影响前面的标准流。 -->
+
+<style>
+  .fly {
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: palegoldenrod;
+  }
+
+  .stay {
+    width: 200px;
+    height: 400px;
+    background-color: red;
+  }
+</style>
+
+<body>
+  <div class="fly"></div>
+  <div class="stay"></div>
+</body>
+
+</html>

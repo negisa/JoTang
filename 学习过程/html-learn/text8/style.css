@@ -1,0 +1,9 @@
+
+h1,p{font-size:12px;}
+.one {font-size:18px;}
+.two{font-size: 24px;
+line-height: 22px;}
+.thr{line-height: 16px;}
+p span{color: aqua;}
+h1 {letter-spacing: 2px;}
+h2{letter-spacing: -3px;}

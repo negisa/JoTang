@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+
+    }
+
+    div:first-child {
+      transform: translate(50%, 50%);
+      /* 移动到50%，50%的位置 */
+    }
+  </style>
+</head>
+<!-- 位移、旋转、缩放 -->
+
+<!-- 新增transform属性，可以控制元素在2D和3D空间中的位置 -->
+<!-- traslate(x,y)用于移动元素 不影响其他盒子的位置，百分比单位参照变换的盒子，对于行内元素无效-->
+<!-- 可以先定位到中间，然后移动50% -->
+<!-- rotate用于旋转元素，正值顺时针 -->
+<!-- translate-origin用于设置中心点，以中心点为原点，默认为50%50%，可以跟方位名词 -->
+<!-- scale用来缩放元素，格式为 scale(x,y)，不会影响其他盒子的大小 -->
+<!-- 有综合写法，但是要注意顺序，位移放在最前面，旋转会改变坐标轴方向 -->
+
+
+<body>
+  <div class="one"></div>
+  <div class="2"></div>
+
+</body>
+
+</html>

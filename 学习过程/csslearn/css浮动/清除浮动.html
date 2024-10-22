@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 保证父元素依靠子元素的高度变化，采用clear清除浮动 -->
+<style>
+  .footer {
+    height: 200px;
+    background-color: black;
+  }
+
+  .box {
+    width: 800px;
+    border: 1px solid blue;
+    margin: 0 auto;
+  }
+
+  .da {
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+  }
+
+  .er {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
+
+  .clear {
+    clear: both
+  }
+
+  ;
+
+  /* 清除浮动方法一，在最后一个浮动元素后面添加一个空标签，清除浮动 */
+  /* 方法2，给父元素添加overflow */
+  /* 第三种方法伪元素 */
+  /* .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .clearfix {
+    /* IE6、7 专有 */
+  /* *zoom: 1;
+  }
+
+  */
+</style>
+
+<body>
+  <div class="box">
+    <div class="da">大猫</div>
+    <div class="er">二毛</div>
+    <!-- <div class="clear"></div> -->
+  </div>
+  <div class="footer"></div>
+
+</body>
+
+</html>

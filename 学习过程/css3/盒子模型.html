@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      border: 20px solid red;
+      padding: 15px;
+      box-sizing: content-box;
+      /* 原始默认是content-box,会被撑开 */
+    }
+
+    p {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+      border: 20px solid red;
+      padding: 15px;
+      box-sizing: border-box;
+      /* 最终大小就是设定大小 */
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    小猪乔治
+  </div>
+  <p>
+    小猪佩奇
+  </p>
+</body>
+
+</html>

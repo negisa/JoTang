@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes mymove {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(200px, 200px);
+      }
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      /* 动画名称 */
+      animation-name: mymove;
+      /* 动画持续时间 */
+      animation-duration: 2s;
+      /* 动画什么时候开始 */
+      animation-delay: 0s;
+      /* 动画播放次数，可以设置为无限 */
+      animation-iteration-count: 1e;
+      /* 动画播放方式，可以设置为linear代表匀速播放，还有 ease-in-out代表慢速开始，加速结束，steps代表步长播放 */
+      /* step()可以实现顿挫，打字机效果,括号内代表分几步 */
+      animation-timing-function: steps(5);
+      /* 逆向播放，逆向播放  alternate */
+      animation-direction: alternate;
+      /* 结束状态，回到起始位置是否，默认是backwards，forwards是不 */
+      animation-fill-mode: forwards;
+      /* 可以整合 */
+      /* animation: mymove 2s 0s infinite alternate forwards; */
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
